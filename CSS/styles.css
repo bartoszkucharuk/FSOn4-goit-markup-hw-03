@@ -10,7 +10,6 @@ body {
    font-family: 'Roboto', sans-serif;;
    color: var(--font-black-color);
    font-weight: 500;
-   width: 1200px;
    }
 h1,
 h2,
@@ -42,11 +41,15 @@ img {display: block;
     text-decoration: none;
 }
 
+.section {
+    border: 1px dashed red;
+}
 
 .container {
-    width: 1600px;
+    width: 1200px;
     align-items: center;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 /* pseudoclasses components */
@@ -57,7 +60,6 @@ img {display: block;
 .logo-accent:focus {
     cursor: pointer
 }
-
 .nav-contact-link-mail:hover,
 .nav-contact-link-mail:focus,
 .nav-contact-link-tel:hover,
@@ -73,23 +75,23 @@ img {display: block;
 
 
 /* ======== HEADER ======== */
+
+
 .header .container {
     display: flex;
     align-items: center;
 }
 
 .header{
-    width: 1600px;
     height: 80px;
-    left: 0px;
-    top: 0px; 
-    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid #ECECEC;
 }
 
 .logo{
-    margin: 24px 93px 25px 215px;
-
+    margin: 24px 93px 24px 15px;
 }
 
 .logo-link{
@@ -105,14 +107,16 @@ img {display: block;
     color: var(--font-black-color);
 }
 
+.nav-list .section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
 
 .nav-list {
     display: flex;
-
 }
 
 .nav-list-item {
-    
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
@@ -146,12 +150,16 @@ img {display: block;
 }
 
 .nav-contact-link-tel {
-    margin-right: 227px;
+    margin-right: 27px;
     margin-left: 50px;
 }
 
 
 /* ============== INDEX.HTML ============== */
+
+.filter .section {
+padding-top: 94px;
+}
 /* ======== big banner ======== */
 .big-banner {
     width: 1600px;
@@ -228,10 +236,6 @@ img {display: block;
     letter-spacing: 3%;
 }
 /* ======== END about ======== */
-
-
-
-
 /* ======== what we do ======== */
 .header-what-we-do {
     font-weight: 700;
@@ -250,7 +254,6 @@ img {display: block;
     padding-bottom: 94px;
 }
 /* ======== END what we do ======== */
-
 /* ======== our team ======== */
 .our-team .container {
     background-color: #F5F4FA;
@@ -312,14 +315,12 @@ img {display: block;
     margin-top: 94px;
     margin-bottom: 50px;
     text-align: center;
-
 }
 
 .filter-list-item{
     display: inline-flex;
     align-items: center;
- 
-}
+ }
 
 .filter-list-item:not(:last-child){
     margin-right: 30px;
@@ -349,25 +350,22 @@ img {display: block;
 .portfolio {
     display: block;
     justify-content: center;
-    padding-left: 200px;
-    padding-right: 200px;
     padding-bottom: 94px;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
+ }
 
 .portfolio-list-item {
-    display: inline-block;
+    display: block;
     justify-content: space-around;
     Width: 370px;
     Height: auto;
     border: 1px solid #EEE;
-    margin: 15px;
-
+    margin-bottom: 30px;
 }
 
 .portfolio-list-item:hover {
