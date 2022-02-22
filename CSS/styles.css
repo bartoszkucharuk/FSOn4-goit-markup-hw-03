@@ -10,6 +10,7 @@ body {
    font-family: 'Roboto', sans-serif;;
    color: var(--font-black-color);
    font-weight: 500;
+   width: 1600px;
    }
 h1,
 h2,
@@ -42,14 +43,14 @@ img {display: block;
 }
 
 .section {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 .container {
     width: 1200px;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* pseudoclasses components */
@@ -84,8 +85,6 @@ img {display: block;
 
 .header{
     height: 80px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
 }
@@ -157,19 +156,28 @@ img {display: block;
 
 /* ============== INDEX.HTML ============== */
 
-.filter .section {
-padding-top: 94px;
-}
-/* ======== big banner ======== */
-.big-banner {
+
+
+
+/* ======== hero ======== */
+.hero {
+    margin-left: -200px;
     width: 1600px;
     height: 600px;
     background-color: #2F303A;
-    height: 600px;
-    margin-bottom: 94px;
+    margin-bottom: 94px;    
 }
 
-.header-big-banner{
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFF;
     font-size: 44px;
     font-weight: 900;
@@ -181,7 +189,7 @@ padding-top: 94px;
     padding-right: 452px;
 }
 
-.button-big-banner {
+.button-hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,18 +205,18 @@ padding-top: 94px;
     border-radius: 4px;
 }
 
-.button-big-banner:focus,
-.button-big-banner:hover {
+.button-hero:focus,
+.button-hero:hover {
     cursor: pointer;
 }
 
-/* ======== END big banner ======== */
+/* ======== END hero ======== */
 /* ======== about ======== */
 
 .about-content {
     display: flex;
     justify-content: center;
-    width: 1600px;
+    width: 1200px;
 }
 
 .about-content-item {
@@ -249,8 +257,8 @@ padding-top: 94px;
 .ul-what-we-do {
     display: flex;
     justify-content: space-between;
-    margin-left: 215px;
-    margin-right: 215px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 94px;
 }
 /* ======== END what we do ======== */
@@ -395,9 +403,9 @@ padding-top: 94px;
 /* ----------------------------------------------------------------------- */
 /* ======== FOOTER ======== */
 .section-footer {
-    width: 1600px;
     height: 252px;
     background-color: #2F303A;
+    display: flex;
 }
 
 .footer-content {
