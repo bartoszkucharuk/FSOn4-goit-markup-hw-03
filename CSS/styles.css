@@ -526,12 +526,6 @@ margin-right: 30px;
     overflow: hidden;
     }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-    }
-
-
-
 .portfolio-list-item-header {
     font-family: var(--main-font);
     font-style: normal;
