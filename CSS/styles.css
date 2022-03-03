@@ -130,22 +130,6 @@ img {display: block;
     margin-right: 46px;
 }
 
-.nav-list-item::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 4px;
-    bottom: -33px;
-    left: 0;
-    background: var(--secondary-color);
-    border-radius: 2px;
-}
-
-.nav-list-item:hover::after {
-    width: 100%;
-}
-
-
 .nav-list-item-link {
     color:var(--font-black-color);
 }
